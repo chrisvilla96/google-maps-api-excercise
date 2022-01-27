@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Place Search Pagination</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" type="text/css" href="./lib/css/paginated-map.css" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="map"></div>
+    <div id="sidebar">
+      <h2>Results</h2>
+      <ul id="places"></ul>
+      <button id="more">Load more results</button>
+    </div>
+  </div>
+  <button id="changePosition">Change Position</button>
+  <button id="changeRadio1">Radio 500m</button>
+  <button id="changeRadio2">Radio 1500m</button>
+  <button id="changeRadio3">Radio 3000m</button>
+  <button id="deletePlaces">Eliminar Lugares</button>
+
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY3WT7PRszYlBwJonOCbUjdQsfntkgBQU&callback=initMap&v=weekly&libraries=places"
+    async></script>
+  <script src="./lib/js/paginated-map.js"></script>
+  <script src="./lib/js/paginated-map-resources.js"></script>
+
+</body>
+
+</html>
